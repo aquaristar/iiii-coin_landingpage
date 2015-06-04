@@ -1,0 +1,507 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+* { 
+  position: relative;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+:focus {outline:none;}
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: #000;/*#52be7f;*/
+	color: #000;
+	/*background: url("../img/bg.jpg");*/
+	background-size: cover;
+}
+
+.div_form {
+	width:50%;
+	height:100%;
+	float:right;
+	font-size:0.8em;
+	margin-top:175px;
+	padding-left:5px;
+}
+
+.p_outline{
+	text-align:center;
+	border:1px dotted #eaeaea;
+	padding:8px 8px 8px 8px;
+	font-weight:bold;
+	border-radius:8px;
+	color:#fff;
+}
+
+.p_outline input{
+	color:#000;
+}
+
+.p_space {
+	border:none;
+}
+
+.component {
+	position: relative;
+	margin-bottom: 3em;
+	height: 15em;
+	background: rgba(0,0,0,0.05);
+	/*font-family: 'Lato', Arial, sans-serif;*/
+}
+
+.component > h2 {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	white-space: nowrap;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 12em;
+	opacity: 0.1;
+	cursor: default;
+}
+
+.cn-button {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	z-index: 11;
+	margin-top: 7.5em;
+	margin-left: -3em;
+	padding-top: 0;
+	width: 5.8em;
+	height: 5.0em;
+	border: none;
+	border-radius: 18%;
+	/*background: none;
+	background-color: #5f5f5f;*/
+	color: #efefef;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	background-image: url(../img/main_logo.png);
+	background-size:contain;
+}
+
+.cn-button_menu {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	z-index: 11;
+	margin-top: 8em;/*7.5em*/
+	margin-left: -2em;
+	padding-top: 0;
+	width: 4.0em;/*5.8em*/
+	height: 4.0em;
+	border: dotted 3px #cfef1f;
+	border-radius: 50%;/*18%;*/
+	background: none;
+	background-color: #5f5f5f;
+	color: #efefef;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	/*background-image: url(../img/menu1.png);
+	background-size:contain;*/
+}
+
+.csstransforms .cn-wrapper {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	z-index: 10;
+	margin-top: -3em;
+	margin-left: -18em;
+	width: 36em;
+	height: 36em;
+	border-radius: 50%;
+	border:1px dashed #aaaaaa;
+	background: transparent;
+	-webkit-transition: all .3s ease 0.3s;
+	-moz-transition: all .3s ease 0.3s;
+	transition: all .3s ease 0.3s;
+	-webkit-transform: scale(0.1);
+	-ms-transform: scale(0.1);
+	-moz-transform: scale(0.1);
+	transform: scale(0.1);
+	pointer-events: none;
+	overflow: hidden;
+	/*background-image:url(../img/silver_coin.png);
+	background-size:contain;*/
+}
+
+/*cover to prevent extra space of anchors from being clickable*/
+.csstransforms .cn-wrapper:after{
+  content:".";
+  display:block;
+  font-size:2em;
+  width:6.2em;
+  height:6.2em;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.1em;
+  top:50%;
+  margin-top: -3.1em;
+  border-radius: 50%;
+  z-index:10;
+  color: transparent;
+}
+
+.csstransforms .opened-nav {
+	border-radius: 50%;
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	pointer-events: auto;
+}
+
+.csstransforms .cn-wrapper li {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	margin-top: 0em;
+	margin-left: -12em;
+	width: 12em;
+	height: 12em;
+	font-size: 1.5em;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	transition: all .3s ease;
+	-webkit-transform: rotate(75deg) skew(62deg); 
+	-moz-transform: rotate(75deg) skew(62deg); 
+	-ms-transform: rotate(75deg) skew(62deg); 
+	transform: rotate(75deg) skew(62deg); 
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	pointer-events: none;
+}
+
+.csstransforms .cn-wrapper li a {
+	opacity: 0.7;
+	position: absolute;
+	right: -10em;
+	bottom: -10em;
+	display: block;
+	width: 20em;
+	height: 20em;
+	border-radius: 50%;
+	/*background: #2A2A2A;
+	background: -webkit-radial-gradient(transparent 0%, #4A4A4A 0%);
+	background: -moz-radial-gradient(transparent 0%, #4A4A4A  0%);
+	background: radial-gradient(transparent 0%, #4A4A4A  0%);*/
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2em;
+	line-height: 2;
+	-webkit-transform: skew(-58deg) rotate(-75deg) scale(1);
+	-moz-transform: skew(-58deg) rotate(-75deg) scale(1);
+	-ms-transform: skew(-58deg) rotate(-75deg) scale(1);
+	transform: skew(-58deg) rotate(-75deg) scale(1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	pointer-events: auto;
+}
+
+.csstransforms .cn-wrapper li a:hover,
+.csstransforms .cn-wrapper li a:active,
+.csstransforms .cn-wrapper li a:focus{
+	opacity: 1;
+}
+
+.csstransforms .cn-wrapper li:first-child a {
+	background: -webkit-radial-gradient(transparent 0%, #00FF75 0%);
+	background: -moz-radial-gradient(transparent 0%, #00FF75 0%);
+	background: radial-gradient(transparent 0%, #00FF75 0%);
+}
+.csstransforms .cn-wrapper li:nth-child(2) a {
+	background: -webkit-radial-gradient(transparent 0%, #7BFF00 0%);
+	background: -moz-radial-gradient(transparent 0%, #7BFF00 0%);
+	background: radial-gradient(transparent 0%, #7BFF00 0%);
+}
+.csstransforms .cn-wrapper li:nth-child(3) a {
+	background: -webkit-radial-gradient(transparent 0%, #FF6B00 0%);
+	background: -moz-radial-gradient(transparent 0%, #FF6B00 0%);
+	background: radial-gradient(transparent 0%, #FF6B00 0%);
+}
+.csstransforms .cn-wrapper li:nth-child(4) a {
+	background: -webkit-radial-gradient(transparent 0%, #FFF100 0%);
+	background: -moz-radial-gradient(transparent 0%, #FFF100 0%);
+	background: radial-gradient(transparent 0%, #FFF100 0%);
+}
+.csstransforms .cn-wrapper li:nth-child(5) a {
+	background: -webkit-radial-gradient(transparent 0%, #FF1400 0%);
+	background: -moz-radial-gradient(transparent 0%, #FF1400 0%);
+	background: radial-gradient(transparent 0%, #FF1400 0%);
+}
+.csstransforms .cn-wrapper li:nth-child(6) a {
+	background: -webkit-radial-gradient(transparent 0%, #FF00DE 0%);
+	background: -moz-radial-gradient(transparent 0%, #FF00DE 0%);
+	background: radial-gradient(transparent 0%, #FF00DE 0%);
+}
+.csstransforms .cn-wrapper li:nth-child(7) a {
+	background: -webkit-radial-gradient(transparent 0%, #00BBFF 0%);
+	background: -moz-radial-gradient(transparent 0%, #00BBFF 0%);
+	background: radial-gradient(transparent 0%, #00BBFF 0%);
+}
+
+/*
+.csstransforms .cn-wrapper li a:hover,
+.csstransforms .cn-wrapper li a:active,
+.csstransforms .cn-wrapper li a:focus {
+}
+
+.csstransforms .cn-wrapper li:nth-child(2) a:hover,
+.csstransforms .cn-wrapper li:nth-child(2) a:active,
+.csstransforms .cn-wrapper li:nth-child(2) a:focus {
+}
+
+.csstransforms .cn-wrapper li:nth-child(3) a:hover,
+.csstransforms .cn-wrapper li:nth-child(3) a:active,
+.csstransforms .cn-wrapper li:nth-child(3) a:focus {
+	background: -webkit-radial-gradient(transparent 0%, #FF6B00 0%);
+	background: -moz-radial-gradient(transparent 0%, #FF6B00 0%);
+	background: radial-gradient(transparent 0%, #FF6B00 0%);
+}
+
+.csstransforms .cn-wrapper li:nth-child(4) a:hover,
+.csstransforms .cn-wrapper li:nth-child(4) a:active,
+.csstransforms .cn-wrapper li:nth-child(4) a:focus {
+	background: -webkit-radial-gradient(transparent 0%, #FFF100 0%);
+	background: -moz-radial-gradient(transparent 0%, #FFF100 0%);
+	background: radial-gradient(transparent 0%, #FFF100 0%);
+}
+
+.csstransforms .cn-wrapper li:nth-child(5) a:hover,
+.csstransforms .cn-wrapper li:nth-child(5) a:active,
+.csstransforms .cn-wrapper li:nth-child(5) a:focus {
+	background: -webkit-radial-gradient(transparent 0%, #FF1400 0%);
+	background: -moz-radial-gradient(transparent 0%, #FF1400 0%);
+	background: radial-gradient(transparent 0%, #FF1400 0%);
+}
+
+.csstransforms .cn-wrapper li:nth-child(6) a:hover,
+.csstransforms .cn-wrapper li:nth-child(6) a:active,
+.csstransforms .cn-wrapper li:nth-child(6) a:focus {
+	background: -webkit-radial-gradient(transparent 0%, #FF00DE 0%);
+	background: -moz-radial-gradient(transparent 0%, #FF00DE 0%);
+	background: radial-gradient(transparent 0%, #FF00DE 0%);
+}
+
+.csstransforms .cn-wrapper li:nth-child(7) a:hover,
+.csstransforms .cn-wrapper li:nth-child(7) a:active,
+.csstransforms .cn-wrapper li:nth-child(7) a:focus {
+	background: -webkit-radial-gradient(transparent 0%, #00BBFF 0%);
+	background: -moz-radial-gradient(transparent 0%, #00BBFF 0%);
+	background: radial-gradient(transparent 0%, #00BBFF 0%);
+}
+*/
+
+
+.csstransforms .cn-wrapper li a span {
+	opacity: 1;
+	color: #fff;
+	position: relative;
+	top: 2.2em;
+	display: block;
+	font-size: .5em;
+	font-weight: 700;
+	/*text-transform: uppercase;*/
+	left:0.4em
+}
+.csstransforms .cn-wrapper li a:hover span,
+.csstransforms .cn-wrapper li a:active span,
+.csstransforms .cn-wrapper li a:focus span{
+	color: #000;
+}
+
+.csstransforms .opened-nav li {
+	-webkit-transition: all .3s ease .3s;
+	-moz-transition: all .3s ease .3s;
+	transition: all .3s ease .3s;
+	opacity: 0.6;
+	/*border-right: 1px dashed #ddd;*/
+}
+
+.csstransforms .opened-nav li:first-child {
+	-webkit-transform: rotate(-90deg) skew(58deg);
+	-moz-transform: rotate(-90deg) skew(58deg);
+	-ms-transform: rotate(-90deg) skew(58deg);
+	transform: rotate(-90deg) skew(58deg); 
+}
+
+.csstransforms .opened-nav li:nth-child(2) {
+	-webkit-transform: rotate(-58deg) skew(58deg);
+	-moz-transform: rotate(-58deg) skew(58deg);
+	-ms-transform: rotate(-58deg) skew(58deg);
+	transform: rotate(-58deg) skew(58deg);
+}
+
+.csstransforms .opened-nav  li:nth-child(3) {
+	-webkit-transform: rotate(-26deg) skew(58deg);
+	-moz-transform: rotate(-26deg) skew(58deg);
+	-ms-transform: rotate(-26deg) skew(58deg);
+	transform: rotate(-26deg) skew(58deg);
+}
+
+.csstransforms .opened-nav li:nth-child(4) {
+	-webkit-transform: rotate(6deg) skew(58deg);
+	-moz-transform: rotate(6deg) skew(58deg);
+	-ms-transform: rotate(6deg) skew(58deg);
+	transform: rotate(6deg) skew(58deg);
+}
+
+.csstransforms .opened-nav li:nth-child(5) {
+	-webkit-transform: rotate(38deg) skew(58deg);
+	-moz-transform: rotate(38deg) skew(58deg);
+	-ms-transform: rotate(38deg) skew(58deg);
+	transform: rotate(38deg) skew(58deg);
+}
+
+.csstransforms .opened-nav li:nth-child(6) {
+	-webkit-transform: rotate(70deg) skew(58deg);
+	-moz-transform: rotate(70deg) skew(58deg);
+	-ms-transform: rotate(70deg) skew(58deg);
+	transform: rotate(70deg) skew(58deg);
+}
+
+.csstransforms .opened-nav li:nth-child(7) {
+	-webkit-transform: rotate(102deg) skew(58deg);
+	-moz-transform: rotate(102deg) skew(58deg);
+	-ms-transform: rotate(102deg) skew(58deg);
+	transform: rotate(102deg) skew(58deg);
+}
+
+.csstransforms .opened-nav li:nth-child(8) {
+	-webkit-transform: rotate(210deg) skew(45deg);
+	-moz-transform: rotate(210deg) skew(45deg);
+	-ms-transform: rotate(210deg) skew(45deg);
+	transform: rotate(210deg) skew(45deg);
+}
+.csstransforms .opened-nav li:nth-child(9) {
+	-webkit-transform: rotate(245deg) skew(45deg);
+	-moz-transform: rotate(245deg) skew(45deg);
+	-ms-transform: rotate(245deg) skew(45deg);
+	transform: rotate(245deg) skew(45deg);
+}
+.csstransforms .opened-nav li:nth-child(10) {
+	-webkit-transform: rotate(270deg) skew(45deg);
+	-moz-transform: rotate(270deg) skew(45deg);
+	-ms-transform: rotate(270deg) skew(45deg);
+	transform: rotate(270deg) skew(45deg);
+}
+.csstransforms .opened-nav li:nth-child(11) {
+	-webkit-transform: rotate(300deg) skew(45deg);
+	-moz-transform: rotate(300deg) skew(45deg);
+	-ms-transform: rotate(300deg) skew(45deg);
+	transform: rotate(300deg) skew(45deg);
+}
+.csstransforms .opened-nav li:nth-child(12) {
+	-webkit-transform: rotate(330deg) skew(45deg);
+	-moz-transform: rotate(330deg) skew(45deg);
+	-ms-transform: rotate(330deg) skew(45deg);
+	transform: rotate(330deg) skew(45deg);
+}
+.no-csstransforms .cn-wrapper {
+	overflow: hidden;
+	margin: 10em auto;
+	padding: .5em;
+	text-align: center;
+}
+
+.no-csstransforms .cn-wrapper ul {
+	display: inline-block;
+}
+
+.no-csstransforms .cn-wrapper li {
+	float: left;
+	width: 5em;
+	height: 5em;
+	background-color: #fff;
+	text-align: center;
+	font-size: 1em;
+	line-height: 5em;
+}
+
+.no-csstransforms .cn-wrapper li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: inherit;
+	text-decoration: none;
+}
+
+.no-csstransforms .cn-wrapper li a:hover,
+.no-csstransforms .cn-wrapper li a:active,
+.no-csstransforms .cn-wrapper li a:focus {
+	background-color: #f8f8f8;
+}
+
+.no-csstransforms .cn-wrapper li.active a{
+	background-color: #6F325C;
+	color: #fff;
+}
+
+.no-csstransforms .cn-button {
+	display: none;
+}
+
+@media only screen and (max-width: 620px) {
+	.no-csstransforms li {
+		width: 4em;
+		height: 4em;
+		line-height: 4em;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.no-ccstransforms .cn-wrapper {
+		padding: .5em;
+	}
+
+	.no-csstransforms .cn-wrapper li {
+		width: 4em;
+		height: 4em;
+		font-size: .9em;
+		line-height: 4em;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.csstransforms .cn-wrapper {
+		font-size: .68em;
+	}
+
+	.cn-button {
+		font-size: 1em;
+	}
+}
+
+@media only screen and (max-width:420px) {
+	.no-csstransforms .cn-wrapper li {
+		width: 100%;
+		height: 3em;
+		line-height: 3em;
+	}
+}
